@@ -1,0 +1,1 @@
+mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc6 -Dpackaging=jar -Dversion=11.2.0.3 -Dfile=filepath_where_ojdbc6_and_project_together_located\ojdbc6-11.2.0.3.jar -DgeneratePom=true
