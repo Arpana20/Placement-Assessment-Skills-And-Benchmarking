@@ -9,3 +9,8 @@ This project is built to enhance the students assessment and train them for thei
 
 ### Modules
 - Student bulk upload or student profile
+- Admin(faculty) bulk upload / Admin profile
+- Question setup / bulk upload
+- Student Assessment Page
+- Assessment Score
+
