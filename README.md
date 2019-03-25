@@ -13,6 +13,7 @@ This project is built to enhance the students assessment and train them for thei
 - Question setup / bulk upload
 - Student Assessment Page
 - Assessment Score
+- Database Creation
 
 ### Student bulk upload / Student profile
 We need to gather the student information and it consists of various field such as login, Register, Take test and View Report, the data are stored in TBL_MST_STUDENT table
@@ -29,6 +30,9 @@ In this module test will be assessed based upon the data which is already stored
 ### Assessment Score
 In this module, the score will be displayed based upon the test attempt. It can be either as individual or bulk of student score can be viewed from TBL_MST_SCORE_PARAMETER table.
 
+### Database Creation
+In this part, all the tables necessary for the creation of a database is done. The created files are stored in SQL folder. These files can be used to configure/ import the database in other systems.
+
 ### Levels details
 #### Level 1 test  
 This test can be taken by all the students irrespective of department and it is Initial 
@@ -38,4 +42,14 @@ This test is considered to be as an intermediate test and it is specific to each
 #### Level 3 test
 This test is Advanced category test. Test questions are based upon various companies. Different companies have different criteria to evaluate a student and based upon that criteria, questions are generated.  
 
+### Tasks Completed
+- Registration and Login [Himanshu]
+- Database Creation [Arpana]
+- Tables creation with Naming Convention [Arpana]
+- Spring MVC Configuration [Himanshu]
+- Database Connectivity with Spring MVC [Arpana, Himanshu]
+- Configuring Dispatcher-Servelet and Web.xml [Himanshu]
+- Creation of JSP files [Arpana, Himanshu]
 
+
+ 
