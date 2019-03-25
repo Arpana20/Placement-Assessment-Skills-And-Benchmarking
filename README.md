@@ -8,9 +8,34 @@ The Existing Placement Online Assessment Training will not provide  the analysis
 This project is built to enhance the students assessment and train them for their placements. The system provides an initial test that is called a mandatory test to all students of various departments during their beginner stage. Based upon the outcome, the system will generate  an individual student report, where each and every student data will be analyzed and their benchmarks will be highlighted. Furthermore, test levels will be generated based upon their previous performance and questions will be randomly distributed for each student based upon their performance. The student can attempt the test multiple times to improve his/ her placement skills. The attempts made by the students and related scores will be updated to the respective faculty members and to the students.
 
 ### Modules
-- Student bulk upload or student profile
+- Student bulk upload / student profile
 - Admin(faculty) bulk upload / Admin profile
 - Question setup / bulk upload
 - Student Assessment Page
 - Assessment Score
+
+### Student bulk upload / Student profile
+We need to gather the student information and it consists of various field such as login, Register, Take test and View Report, the data are stored in TBL_MST_STUDENT table
+
+### Admin(faculty) bulk upload / Admin profile
+The administrator module is also called as faculty module consist of tabs such as view report, upload questions and bulk registration, and the admin data are stored in TBL_MST_STAFF table.
+
+### Question setup / bulk upload
+In this question module, faculty can upload questions to the portal and questions can be uploaded into the system in two forms. One method is through an User interface which asks for questions, choices and their answer. Another method is through Excel sheet upload and this is stored in TBL_MST_QUESTION table.
+
+### Student Assessment Page
+In this module test will be assessed based upon the data which is already stored in the database and this result will be stored in TBL_TRS_STUDENT_ASSESSMENT table.
+
+### Assessment Score
+In this module, the score will be displayed based upon the test attempt. It can be either as individual or bulk of student score can be viewed from TBL_MST_SCORE_PARAMETER table.
+
+### Levels details
+#### Level 1 test  
+This test can be taken by all the students irrespective of department and it is Initial 
+tests are basic test and it consist of questions based upon problem solving skills such as Aptitude, and questions based upon Increasing communication skills through English.
+#### Level 2 test
+This test is considered to be as an intermediate test and it is specific to each department. Domain Knowledge can be increased in this field.
+#### Level 3 test
+This test is Advanced category test. Test questions are based upon various companies. Different companies have different criteria to evaluate a student and based upon that criteria, questions are generated.  
+
 
