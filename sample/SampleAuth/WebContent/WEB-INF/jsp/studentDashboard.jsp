@@ -7,11 +7,8 @@
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style type="text/css">
+
 		
-		.tab {
-  			overflow: hidden;
-  			border: 1px solid #ccc;
-  			background-color: #f1f1f1;
   			
   			
 		}
@@ -54,12 +51,7 @@
 </head>
 <body>
 
-<div class="tab">
-  <form action = "studentDashboard.html"><button>Take Test</button></form>
-  <form action = "studentDashboard.html"><button>Practice Tests</button></form>
-  <form action = "studentViewReport.html"><button>View Report</button></form>
 
-</div>
 <div >
   <div class="card border-primary mb-3" style="max-width: 60rem;">
   <div class="card-header">Level 1</div>
@@ -76,7 +68,7 @@
   <div class="card-body">
     <h4 class="card-title">Intermediate Test</h4>
     <p class="card-text">This part checks for your ability in Domain Knowledge(Differs Department wise).</p>
-    <form action="level2Test.html" method="get"><input class="w3-button w3-section w3-teal w3-ripple" type="submit" value="Go!"></form>
+    <form action="level1Test.html" method="get"><input class="w3-button w3-section w3-teal w3-ripple" type="submit" value="Go!"></form>
   </div>
 </div>
 </div>
@@ -86,7 +78,7 @@
   <div class="card-body">
     <h4 class="card-title">Advanced Test</h4>
     <p class="card-text">This part concentrates on Company related problem statements.</p>
-    <form action="level3Test.html" method="get"><input class="w3-button w3-section w3-teal w3-ripple" type="submit" value="Go!">
+    <form action="level1Test.html" method="get"><input class="w3-button w3-section w3-teal w3-ripple" type="submit" value="Go!">
     
     
     

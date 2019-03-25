@@ -52,28 +52,23 @@ uri="http://www.springframework.org/tags/form" prefix="form"%>
       <div class="w3-container w3-half w3-margin-top">
         <p style="color:red"> ${msg} </p>
         
-       
+ 	<form method="post" action="login" class="w3-container w3-card-4">
+            <p>
+               <label>Username</label>
+               <input class="w3-input" type="text" name="userName" style="width:90%" required>
+            </p>
+            <p>
+               <label>Password</label>
+               <input class="w3-input" type="password" name="password" style="width:90%" required>
+            </p>
+            <p><a href="#">Forgot Password?</a></p>
+            <p>
+               <input type="submit" value="Submit" />
+            </p>
+         </form>      
         
- <form:form action="login" method="POST">
-<div align="center">
-<table>
-<tr>
-<td>User Name</td>
-<td><input type="text" name="userName" /></td>
-</tr>
-<tr>
-<td>Password</td>
-<td><input type="password" name="password" /></td>
-</tr>
-<tr>
-<td></td>
-<td><input type="submit" value="Submit" /></td>
-</tr>
-</table>
-<div style="color: red">${error}</div>
-
-</div>
-</form:form>
+ 
+ 
       </div>
    </body>
 </html>

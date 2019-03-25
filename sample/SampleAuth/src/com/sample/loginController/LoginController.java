@@ -100,7 +100,7 @@ public class LoginController {
 	public String questionaire(Model model) {
 		
 		
-		return null;
+		return "validateQuestions";
 			
 	}
 }
