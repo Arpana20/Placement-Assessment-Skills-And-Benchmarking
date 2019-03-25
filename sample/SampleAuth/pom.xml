@@ -55,5 +55,20 @@
   		<artifactId>jstl</artifactId>
   		<version>1.2</version>
   	</dependency>
+  	<dependency>
+	  	<groupId>com.oracle</groupId>
+	  	<artifactId>ojdbc6</artifactId>
+	  	<version>11.2.0.3</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-jdbc</artifactId>
+  		<version>5.1.1.RELEASE</version>
+  	</dependency>
+  	<dependency>  
+	    <groupId>org.apache.tomcat</groupId>  
+	    <artifactId>tomcat-jasper</artifactId>  
+	    <version>9.0.12</version>  
+	</dependency>  
   </dependencies>
 </project>
