@@ -47,14 +47,18 @@ This test is Advanced category test. Test questions are based upon various compa
 [Admin/ Faculty Flow](https://drive.google.com/file/d/15g-eHZrAiF-oG3t3MWT6ENjAcBw4Gsuk/view)
 
 ### Tasks Completed
-- Project Flow [Arpana, Himanshu]
-- Registration and Login [Himanshu]
-- Database Creation [Arpana]
-- Tables creation with Naming Convention [Arpana]
-- Spring MVC Configuration [Himanshu]
-- Database Connectivity with Spring MVC [Arpana, Himanshu]
-- Configuring Dispatcher-Servelet and Web.xml [Himanshu]
-- Creation of JSP files [Arpana, Himanshu]
+- #### Project Flow [Arpana, Himanshu]
+          Faculty flow[Arpana] and Student flow[Himanshu].
+- #### Registration and Login [Himanshu]
+          Design of login and registration page.
+- #### Database Creation [Arpana]
+          All tables creation with proper naming conventions.          
+- #### Spring MVC Configuration [Himanshu]
+          Configuration of POM.xml and WEB.xml files.
+- #### Database Connectivity with Spring MVC [Arpana, Himanshu]
+          Configured the appropriate JAR file required and updated with spring configuration.
+- #### Creation of JSP files [Arpana, Himanshu]
+          JSP files such as studentDashboard, facultyDashboard, takeTest, uploadQuestions, viewReport, etc., files creation.
 
 
  
