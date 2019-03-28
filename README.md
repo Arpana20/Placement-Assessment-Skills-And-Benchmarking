@@ -60,10 +60,7 @@ This test is Advanced category test. Test questions are based upon various compa
 - #### Creation of JSP files [Arpana, Himanshu]
    JSP files such as studentDashboard, facultyDashboard, takeTest, uploadQuestions, viewReport, etc., files creation.
 
-### Future Enhancements
-- Updation of Forgot Password feature
-- Validating Username and Password for special cases
-- Validation of test page 
+### Future Enhancements 
 - Adding Questions for other level tests
 - Adding functionality to provide Training Test
 - Faculty upload module
