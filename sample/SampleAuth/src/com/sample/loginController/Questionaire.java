@@ -38,6 +38,10 @@ public class Questionaire {
 		this.questionTextAns = questionTextAns;
 		this.activeStatus = activeStatus;
 	}
+	public String getChoice() {
+		String choice = questionChoice1 + questionChoice2 + questionChoice3 + questionChoice4;
+		return choice;
+	}
 	public int getQuestionId() {
 		return questionId;
 	}

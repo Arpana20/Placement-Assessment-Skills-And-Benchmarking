@@ -8,8 +8,12 @@ import java.sql.SQLException;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import org.springframework.jdbc.core.CallableStatementCreator;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -79,9 +83,9 @@ public class OracleConn {
 		System.out.println(i);
 		System.out.println(uname);
 		System.out.println(password);
-		String allQ = "SELECT * FROM TBL_MST_STUDENT";
+		//String allQ = "SELECT * FROM TBL_MST_STUDENT";
 		
-		List list = jdbcTemplate.queryForList(allQ);
+		//List list = jdbcTemplate.queryForList(allQ);
 		
 //		Map<String, Object> str = jdbcTemplate.queryForMap(allQ);
 //		System.out.println(str);
@@ -107,5 +111,54 @@ public class OracleConn {
 		//System.out.println(allQ);
 		return allQ;
 		
+	}
+	public List sampleGetQuestions() {
+		SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
+		dataSource.setDriver(new oracle.jdbc.OracleDriver());
+		dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:ORCL");
+		dataSource.setUsername("scott");
+		dataSource.setPassword("tiger");
+		
+		JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+		String ques = "Select * from TBL_MST_QUESTION";
+		List<String> newS = new ArrayList<String>();
+		
+		List allQ = jdbcTemplate.queryForList(ques);
+//		String allS = allQ.toString().replace("{", "").replace("}", "");
+//		String s[] = allS.split(",");
+		
+//		newS = Arrays.asList(s);
+//		String allS = toFormattedString(allQ);
+//		System.out.println(allS);
+//		System.out.println(newS);
+//		String str =  allQ.get(4).toString();
+		List<String> QuesList = new ArrayList<String>();
+		String str = allQ.toString();
+		String sArray[] = str.split("}");
+		String ques1 = null;
+		for(int i=1; i<5; i++) {
+//			String str = allQ.get(i).toString();
+//			QuesList.add(str.split("VCH_QUESTION_NAME=").toString());
+			//System.out.println(sArray[i]);
+//			ques1 = sArray[i].split("VCH_QUESTION_NAME=");
+			ques1 = sArray[i].replaceAll("{NUM_QUESTION_ID=1, NUM_LEVEL_ID=1, NUM_SUBLEVEL_ID=1, VCH_QUESTION_NAME=", "");
+			System.out.println(ques1);
+		}
+		
+//		System.out.println(str);
+//		for(String i:s) {
+//			System.out.println(i);
+//		}
+//		for(String i: ques1) {
+//			System.out.println(i);
+//		}
+		return allQ;
+		
+	}
+	
+	String toFormattedString(Map<String,Integer> map) {
+	    return map.entrySet().stream()
+	        .map(e -> String.format("(\"%s\", %d)", e.getKey(), e.getValue()))
+	        .collect(Collectors.joining(", "));
 	}
 }

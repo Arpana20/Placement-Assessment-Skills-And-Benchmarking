@@ -61,14 +61,11 @@ uri="http://www.springframework.org/tags/form" prefix="form"%>
                <label>Password</label>
                <input class="w3-input" type="password" name="password" style="width:90%" required>
             </p>
-            <p><a href="#">Forgot Password?</a></p>
+            
             <p>
                <input type="submit" value="Submit" />
             </p>
          </form>      
-        
- 
- 
       </div>
    </body>
 </html>
